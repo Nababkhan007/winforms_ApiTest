@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ApiTest
 {
-    public partial class Form1 : Form
+    public partial class frmApiTest : Form
     {
-        public Form1()
+        public frmApiTest()
         {
             InitializeComponent();
+        }
+
+        private void frmApiTest_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
