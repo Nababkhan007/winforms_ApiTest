@@ -8,4 +8,4 @@ E:\VisualStudioProjects\ApiTest\ApiTest\obj\Debug\ApiTest.csproj.GenerateResourc
 E:\VisualStudioProjects\ApiTest\ApiTest\obj\Debug\ApiTest.csproj.CoreCompileInputs.cache
 E:\VisualStudioProjects\ApiTest\ApiTest\obj\Debug\ApiTest.exe
 E:\VisualStudioProjects\ApiTest\ApiTest\obj\Debug\ApiTest.pdb
-E:\VisualStudioProjects\ApiTest\ApiTest\obj\Debug\ApiTest.frmApiTest.resources
+E:\VisualStudioProjects\ApiTest\ApiTest\obj\Debug\ApiTest.FormApiTest.resources

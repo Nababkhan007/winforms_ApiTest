@@ -1,6 +1,6 @@
 ﻿namespace ApiTest
 {
-    partial class frmApiTest
+    partial class FormApiTest
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // frmApiTest
+            // FormApiTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmApiTest";
+            this.Name = "FormApiTest";
             this.Text = "ApiTest";
-            this.Load += new System.EventHandler(this.frmApiTest_Load);
+            this.Load += new System.EventHandler(this.FormApiTest_Load);
             this.ResumeLayout(false);
 
         }

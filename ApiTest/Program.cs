@@ -16,7 +16,7 @@ namespace ApiTest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmApiTest());
+            Application.Run(new FormApiTest());
         }
     }
 }
