@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{870CDAC5-C2D0-4F34-9267-EEB5EF070454}</ProjectGuid>
+    <ProjectGuid>{C1D7E71A-069A-4F3F-A301-7146513B811D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ApiTest.Api</RootNamespace>
-    <AssemblyName>ApiTest.Api</AssemblyName>
+    <RootNamespace>ApiTest.Model</RootNamespace>
+    <AssemblyName>ApiTest.Model</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,13 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiBase.cs" />
-    <Compile Include="FormApi.cs">
+    <Compile Include="FormModel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormApi.Designer.cs">
-      <DependentUpon>FormApi.cs</DependentUpon>
+    <Compile Include="FormModel.Designer.cs">
+      <DependentUpon>FormModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="PostModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -67,7 +64,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,10 +78,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApiTest.Model\ApiTest.Model.csproj">
-      <Project>{C1D7E71A-069A-4F3F-A301-7146513B811D}</Project>
-      <Name>ApiTest.Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ApiTest.Service\ApiTest.Service.csproj">
       <Project>{22EC0759-153F-4E87-8578-1CEFDBB60277}</Project>
       <Name>ApiTest.Service</Name>

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,16 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiTest.cs">
+    <Compile Include="FormApiTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApiTest.Designer.cs">
-      <DependentUpon>ApiTest.cs</DependentUpon>
+    <Compile Include="FormApiTest.Designer.cs">
+      <DependentUpon>FormApiTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ApiTest.resx">
-      <DependentUpon>ApiTest.cs</DependentUpon>
+    <EmbeddedResource Include="FormApiTest.resx">
+      <DependentUpon>FormApiTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +81,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiTest.Api\ApiTest.Api.csproj">
+      <Project>{870CDAC5-C2D0-4F34-9267-EEB5EF070454}</Project>
+      <Name>ApiTest.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApiTest.Model\ApiTest.Model.csproj">
+      <Project>{C1D7E71A-069A-4F3F-A301-7146513B811D}</Project>
+      <Name>ApiTest.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApiTest.Service\ApiTest.Service.csproj">
+      <Project>{22EC0759-153F-4E87-8578-1CEFDBB60277}</Project>
+      <Name>ApiTest.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
